@@ -1,9 +1,9 @@
 import {useAppDispatch, useAppSelector } from "../hooks/store"
-import {type GameSession, addNewGameSession} from "../store/GameSession/slice"
+import { addNewGameSession} from "../store/GameSession/slice"
 export const useGameSessionActions = () => {
     const dispatch = useAppDispatch();
 
-    const addGameSession = (date: GameSession) =>{
+    const addGameSession = (date: any) =>{
         dispatch(addNewGameSession({date}))
     }
     return { addGameSession }

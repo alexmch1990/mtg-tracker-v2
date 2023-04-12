@@ -8,7 +8,7 @@ export default function GameSession(){
     const dates = useAppSelector((state) => state.gameSession);
     console.log(dates)
     
-    function handleOnSubmit(event){
+    function handleOnSubmit(event: any){
         event.preventDefault()
         const form = event.target;
 		const formData = new FormData(form);
@@ -32,7 +32,7 @@ export default function GameSession(){
                 <Divider />
                 <List>
                     {
-                    dates.map((d) => (
+                    dates.map((d: any) => (
                         <ListItem key={d.date}>
                             <span>{new Date(d.date).toLocaleDateString()}</span>
                         </ListItem>

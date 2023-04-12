@@ -8,14 +8,19 @@ export default function Game(){
     const [playerWithDeck, setPlayerWithDeck] = useState([])
     const [playerSelected, setPlayerSelected] = useState("1")
     const [deckSelected, setDeckSelected] = useState("")
-    function handleAddPlayerDeckClick(e){
+    function handleAddPlayerDeckClick(e: any){
         e.preventDefault()
         console.log(deckSelected)
         if(deckSelected === '')return 
-        const dp ={
+        /*const dp : any={
             id: crypto.randomUUID(),
-            player: players.findLast((p)=> p.id === playerSelected)?.name,
-            deck: decks.findLast((d)=> d.id===deckSelected)?.name
+            player: players.findLast((p: any)=> p.id === playerSelected)?.name,
+            deck: decks.findLast((d: any)=> d.id===deckSelected)?.name
+        }*/
+        const dp : any={
+            id: crypto.randomUUID(),
+            player: players.filter((p: any)=> p.id === playerSelected)[0].name,
+            deck: decks.filter((d: any)=> d.id===deckSelected)[0].name
         }
         setDecks(decks.filter(d=>d.id!==deckSelected))
         setPlayers(players.filter(p=>p.id!==playerSelected))
@@ -54,7 +59,7 @@ export default function Game(){
                 <Card className="max-w-xs">
                     <Title>Players</Title>
                     <List>
-                        {playerWithDeck.map((p) => (
+                        {playerWithDeck.map((p: any) => (
                             <ListItem key={p.id}>
                                 <input type='checkbox'></input>
                                 <span>{p.player}</span>

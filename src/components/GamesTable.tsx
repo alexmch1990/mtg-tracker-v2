@@ -1,6 +1,6 @@
 import { Card, Title,Badge,Text, Table,TableHead,TableHeaderCell,TableBody,TableRow,TableCell} from "@tremor/react";
 
-export default function GamesTable({data}){
+export default function GamesTable({data}: any){
     return (
         <Card>
         <Title>Aaa</Title><Badge>{data.length}</Badge>
@@ -15,11 +15,11 @@ export default function GamesTable({data}){
             </TableRow>
           </TableHead>
           <TableBody>
-            {data.map((d) => (
+            {data.map((d: any) => (
               <TableRow key={d.id}>
                 <TableCell>{d.gameSessionDate}</TableCell>
                 <TableCell>
-                    {d.gamePlayers.map((gp)=>(<><span><span>{gp.playerName}</span><span> - </span><span>{gp.deckName}</span></span><span> | </span></>))}
+                    {d.gamePlayers.map((gp: any)=>(<><span><span>{gp.playerName}</span><span> - </span><span>{gp.deckName}</span></span><span> | </span></>))}
                 </TableCell>
                 <TableCell>
                     <Text>{d.winnerPlayerName}</Text>
