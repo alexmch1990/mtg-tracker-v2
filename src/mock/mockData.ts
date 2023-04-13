@@ -26,10 +26,6 @@ export const playersMock = [
     {
         "id": "7",
         "name": "Cezar"
-    },
-    {
-        "id": "8",
-        "name": "draw"
     }
 ]
 export const decksMock = [
