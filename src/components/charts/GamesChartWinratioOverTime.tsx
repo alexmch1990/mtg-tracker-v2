@@ -1,5 +1,5 @@
 import { Card, Title, AreaChart } from "@tremor/react";
-import { gamesMock, playersMock } from '../mock/mockData'
+import { gamesMock, playersMock } from '../../mock/mockData'
 export default function GamesChartWinratioOverTime({data}: any){
    
   function formatData(data: any){
@@ -44,7 +44,7 @@ export default function GamesChartWinratioOverTime({data}: any){
             className="h-72 mt-4"
             data={formatData(data)}
             index="gameSession"
-            categories={playersMock.map(p => p.name)}
+            categories={playersMock.map((p: any) => p.name)}
             colors={["indigo", "cyan", "fuchsia","rose", "yellow", "emerald", "purple"]}
             valueFormatter={dataFormatter}
         />

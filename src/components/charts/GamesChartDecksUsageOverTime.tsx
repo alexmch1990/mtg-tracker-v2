@@ -1,5 +1,5 @@
 import {AreaChart, Card, Title, BarChart  } from "@tremor/react";
-import {  playersMock, decksMock } from '../mock/mockData'
+import {  playersMock, decksMock } from '../../mock/mockData'
 export default function GamesChartDecksUsage({data, player}: any){
   const playerId = playersMock.filter((p:any) => p.name === player)[0].id
   const decksPlayer = decksMock.filter((d:any) => d.ownerId === playerId)

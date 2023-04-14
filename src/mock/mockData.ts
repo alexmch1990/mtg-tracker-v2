@@ -32,167 +32,309 @@ export const decksMock = [
     {
         "id": "1",
         "ownerId": "1",
-        "name": "Yuriko"
+        "name": "Yuriko",
+        "colors": [
+            "Black",
+            "Blue"
+        ]
     },
     {
         "id": "2",
         "ownerId": "3",
-        "name": "Karlov"
+        "name": "Karlov",
+        "colors": [
+            "Black",
+            "White"
+        ]
     },
     {
         "id": "3",
         "ownerId": "2",
-        "name": "Markov"
+        "name": "Markov",
+        "colors": [
+            "Red",
+            "White",
+            "Black"
+        ]
     },
     {
         "id": "4",
         "ownerId": "4",
-        "name": "Archaon"
+        "name": "Archaon",
+        "colors": [
+            "Red",
+            "White",
+            "Black",
+            "Blue",
+            "Green"
+        ]
     },
     {
         "id": "5",
         "ownerId": "1",
-        "name": "Veyran"
+        "name": "Veyran",
+        "colors": [
+            "Red",
+            "Blue"
+        ]
     },
     {
         "id": "6",
         "ownerId": "3",
-        "name": "Teysa"
+        "name": "Teysa",
+        "colors": [
+            "Black",
+            "White"
+        ]
     },
     {
         "id": "7",
         "ownerId": "1",
-        "name": "Anje"
+        "name": "Anje",
+        "colors": [
+            "Red",
+            "Black"
+        ]
     },
     {
         "id": "8",
         "ownerId": "2",
-        "name": "Meren"
+        "name": "Meren",
+        "colors": [
+            "Black",
+            "Green"
+        ]
     },
     {
         "id": "9",
         "ownerId": "1",
-        "name": "Ivy"
+        "name": "Ivy",
+        "colors": [
+            "Blue",
+            "Green"
+        ]
     },
     {
         "id": "10",
         "ownerId": "2",
-        "name": "Sliver"
+        "name": "Sliver",
+        "colors": [
+            "Red",
+            "White",
+            "Black",
+            "Blue",
+            "Green"
+        ]
     },
     {
         "id": "11",
         "ownerId": "4",
-        "name": "Reki"
+        "name": "Reki",
+        "colors": [
+            "Green"
+        ]
     },
     {
         "id": "12",
         "ownerId": "1",
-        "name": "Kumena"
+        "name": "Kumena",
+        "colors": [
+            "Blue",
+            "Green"
+        ]
     },
     {
         "id": "13",
         "ownerId": "4",
-        "name": "Atraxa"
+        "name": "Atraxa",
+        "colors": [
+            "White",
+            "Black",
+            "Blue",
+            "Green"
+        ]
     },
     {
         "id": "14",
         "ownerId": "4",
-        "name": "Sefris"
+        "name": "Sefris",
+        "colors": [
+            "White",
+            "Black",
+            "Blue"
+        ]
     },
     {
         "id": "15",
         "ownerId": "4",
-        "name": "Isshin"
+        "name": "Isshin",
+        "colors": [
+            "Red",
+            "White",
+            "Black"
+        ]
     },
     {
         "id": "16",
         "ownerId": "3",
-        "name": "Urza"
+        "name": "Urza",
+        "colors": [
+            "White",
+            "Black",
+            "Blue"
+        ]
     },
     {
         "id": "17",
         "ownerId": "2",
-        "name": "Lathril"
+        "name": "Lathril",
+        "colors": [
+            "Black",
+            "Green"
+        ]
     },
     {
         "id": "18",
         "ownerId": "6",
-        "name": "Nymris"
+        "name": "Nymris",
+        "colors": [
+            "Black",
+            "Blue"
+        ]
     },
     {
         "id": "19",
         "ownerId": "3",
-        "name": "UrzaPrecon"
+        "name": "UrzaPrecon",
+        "colors": [
+            "White",
+            "Black",
+            "Blue"
+        ]
     },
     {
         "id": "20",
         "ownerId": "4",
-        "name": "Neyali"
+        "name": "Neyali",
+        "colors": [
+            "Black",
+            "White"
+        ]
     },
     {
         "id": "21",
         "ownerId": "4",
-        "name": "Ixhel"
+        "name": "Ixhel",
+        "colors": [
+            "Black",
+            "White",
+            "Green"
+        ]
     },
     {
         "id": "22",
         "ownerId": "5",
-        "name": "Myriim"
+        "name": "Myriim",
+        "colors": [
+            "Black",
+            "White",
+            "Green"
+        ]
     },
     {
         "id": "23",
         "ownerId": "4",
-        "name": "Jon Irenicus"
+        "name": "Jon Irenicus",
+        "colors": [
+            "Black",
+            "Blue"
+        ]
     },
     {
         "id": "24",
         "ownerId": "2",
-        "name": "Yuriko_fer"
+        "name": "Yuriko_fer",
+        "colors": [
+            "Black",
+            "Blue"
+        ]
     },
     {
         "id": "25",
         "ownerId": "6",
-        "name": "Tekuthal"
+        "name": "Tekuthal",
+        "colors": [
+            "Green"
+        ]
     },
     {
         "id": "26",
         "ownerId": "4",
-        "name": "FaldornPrecon"
+        "name": "FaldornPrecon",
+        "colors": []
     },
     {
         "id": "27",
         "ownerId": "7",
-        "name": "CaosPrecon"
+        "name": "CaosPrecon",
+        "colors": []
     },
     {
         "id": "28",
         "ownerId": "3",
-        "name": "NecronesPrecon"
+        "name": "NecronesPrecon",
+        "colors": [
+            "Green"
+        ]
     },
     {
         "id": "29",
         "ownerId": "1",
-        "name": "TyranidsPrecon"
+        "name": "TyranidsPrecon",
+        "colors": [
+            "Black",
+            "White",
+            "Green"
+        ]
     },
     {
         "id": "30",
         "ownerId": "4",
-        "name": "Henzie"
+        "name": "Henzie",
+        "colors": [
+            "Black",
+            "Red",
+            "Green"
+        ]
     },
     {
         "id": "31",
         "ownerId": "4",
-        "name": "Burakos"
+        "name": "Burakos",
+        "colors": [
+            "Red",
+            "Green"
+        ]
     },
     {
         "id": "32",
         "ownerId": "4",
-        "name": "Konrad"
+        "name": "Konrad",
+        "colors": [
+            "Green"
+        ]
     },
     {
         "id": "33",
         "ownerId": "4",
-        "name": "Jodah"
+        "name": "Jodah",
+        "colors": [
+            "Red",
+            "White",
+            "Black",
+            "Blue",
+            "Green"
+        ]
     }
 ]
 export const gamesMock = [

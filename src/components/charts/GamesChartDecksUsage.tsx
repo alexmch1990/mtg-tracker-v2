@@ -1,5 +1,5 @@
 import { Card, Title, BarChart  } from "@tremor/react";
-import {  playersMock, decksMock } from '../mock/mockData'
+import {  playersMock, decksMock } from '../../mock/mockData'
 export default function GamesChartDecksUsage({data, player}: any){
    
   function formatData(data: any, player: any){

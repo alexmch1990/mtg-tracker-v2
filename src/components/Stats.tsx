@@ -2,9 +2,11 @@ import { Col, List, ListItem, Grid,DateRangePicker, DateRangePickerValue,Button,
 import { useState } from 'react'
 import { gamesMock, playersMock, decksMock } from '../mock/mockData'
 import GamesTable from '../components/GamesTable'
-import GamesChartWinratioOverTime from './GamesChartWinratioOverTime'
-import GamesChartDecksUsage from './GamesChartDecksUsage'
-import GamesChartDecksUsageOverTime from './GamesChartDecksUsageOverTime'
+import GamesChartWinratioOverTime from './charts/GamesChartWinratioOverTime'
+import GamesChartDecksUsage from './charts/GamesChartDecksUsage'
+import GamesChartDecksUsageOverTime from './charts/GamesChartDecksUsageOverTime'
+import GamesChartColorPresence from './charts/GamesChartColorPresence'
+import GamesChartColorAffinity from './charts/GamesChartColorAffinity'
 
 export default function Stats (){
     const [chartSelected, setChartSelected] = useState("WinratioOverTime")
@@ -19,17 +21,37 @@ export default function Stats (){
                 return getWinratioOverTimeChart();
             case 'DecksUsage':
                 return (<Card><GamesChartDecksUsage 
-                                data={gamesMock.filter((g : any)=> g.gamePlayers.some((gp : any) => gp.playerName === playerSelected))
-                                                .filter(g => new Date(g.gameSessionDate) > dateRange[0]! && new Date(g.gameSessionDate) < dateRange[1]!)
-                                                .filter(g => g.gamePlayers.map(gg => gg.deckName).every(pn => multiValueDecks.includes(pn)))}
+                                data={gamesMock
+                                        .filter((g : any)=> g.gamePlayers.some((gp : any) => gp.playerName === playerSelected))
+                                        .filter(g => new Date(g.gameSessionDate) > dateRange[0]! && new Date(g.gameSessionDate) < dateRange[1]!)
+                                        .filter(g => g.gamePlayers.map(gg => gg.deckName).every(pn => multiValueDecks.includes(pn)))}
                                 player={playerSelected}/></Card>)
             case 'DecksUsageOverTime':
                 return (<Card><GamesChartDecksUsageOverTime 
-                                data={gamesMock.filter((g : any)=> g.gamePlayers.some((gp : any) => gp.playerName === playerSelected))
+                                data={gamesMock
+                                    .filter((g : any)=> g.gamePlayers.some((gp : any) => gp.playerName === playerSelected))
                                     .filter(g => new Date(g.gameSessionDate) > dateRange[0]! && new Date(g.gameSessionDate) < dateRange[1]!)
                                     .filter(g => g.gamePlayers.map(gg => gg.deckName).every(pn => multiValueDecks.includes(pn)))}
 
                                 player={playerSelected}/></Card>)
+            case 'ColorAffinity':
+                return (<Card><GamesChartColorAffinity
+                    data={
+                            gamesMock
+                                .filter((g : any)=> g.gamePlayers.some((gp : any) => gp.playerName === playerSelected))
+                                .filter(g => g.gamePlayers.map(gg => gg.deckName).every(pn => multiValueDecks.includes(pn)))
+                                .filter(g => new Date(g.gameSessionDate) > dateRange[0]! && new Date(g.gameSessionDate) < dateRange[1]!)
+                        } player={playerSelected}/>
+                            </Card>)
+            case 'ColorPresence':
+                return (<Card><GamesChartColorPresence 
+                    data={
+                            gamesMock
+                                .filter(g => g.gamePlayers.map(gg => gg.playerName).every(pn => multiValuePlayers.includes(pn)))
+                                .filter(g => g.gamePlayers.map(gg => gg.deckName).every(pn => multiValueDecks.includes(pn)))
+                                .filter(g => new Date(g.gameSessionDate) > dateRange[0]! && new Date(g.gameSessionDate) < dateRange[1]!)
+                        }/>
+                            </Card>)
             default:
                 return
 
@@ -38,7 +60,9 @@ export default function Stats (){
     const selectedFilters = () => {
         switch(chartSelected){
             case 'WinratioOverTime':
+            case 'ColorPresence':
                 return getFiltersA();
+            case 'ColorAffinity':
             case 'DecksUsage':
             case 'DecksUsageOverTime':
                 return getFiltersB();
@@ -133,6 +157,8 @@ export default function Stats (){
                             <ListItem><button onClick={()=>{setChartSelected("WinratioOverTime")}}>Winratio over time</button></ListItem>
                             <ListItem><button onClick={()=>{setChartSelected("DecksUsage")}}>Decks usage</button></ListItem>
                             <ListItem><button onClick={()=>{setChartSelected("DecksUsageOverTime")}}>Decks usage over time</button></ListItem>
+                            <ListItem><button onClick={()=>{setChartSelected("ColorPresence")}}>Color presence</button></ListItem>
+                            <ListItem><button onClick={()=>{setChartSelected("ColorAffinity")}}>Color affinity</button></ListItem>
                         </List>
                         <div className="h-28" />
                     </Card>
