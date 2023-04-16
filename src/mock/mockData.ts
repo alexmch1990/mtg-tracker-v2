@@ -335,6 +335,51 @@ export const decksMock = [
             "Blue",
             "Green"
         ]
+    },
+    {
+        "id": "34",
+        "ownerId": "3",
+        "name": "Lazav",
+        "colors": [
+            "Black",
+            "Blue"
+        ]
+    },
+    {
+        "id": "35",
+        "ownerId": "1",
+        "name": "Kinnan",
+        "colors": [
+            "Blue",
+            "Green"
+        ]
+    },
+    {
+        "id": "36",
+        "ownerId": "1",
+        "name": "Light-Paws",
+        "colors": [
+            "White"
+        ]
+    },
+    {
+        "id": "37",
+        "ownerId": "4",
+        "name": "Scarab-god",
+        "colors": [
+            "Black",
+            "Blue"
+        ]
+    },
+    {
+        "id": "38",
+        "ownerId": "4",
+        "name": "Sidar Jabari",
+        "colors": [
+            "White",
+            "Black",
+            "Blue"
+        ]
     }
 ]
 export const gamesMock = [
@@ -2139,5 +2184,233 @@ export const gamesMock = [
         "winnerDeckId": 33,
         "winnerDeckName": "Jodah",
         "turns": 8
+    },
+    {
+        "id": 51,
+        "gameSessionId": 13,
+        "gameSessionDate": "2023-04-15T22:00:00.000+00:00",
+        "gamePlayers": [
+            {
+                "playerId": 1,
+                "deckId": 35,
+                "playerName": "Alex",
+                "deckName": "Kinnan"
+            },
+            {
+                "playerId": 3,
+                "deckId": 34,
+                "playerName": "Andreu",
+                "deckName": "Lazav"
+            },
+            {
+                "playerId": 2,
+                "deckId": 8,
+                "playerName": "Fer",
+                "deckName": "Meren"
+            },
+            {
+                "playerId": 4,
+                "deckId": 37,
+                "playerName": "Betto",
+                "deckName": "Scarab-god"
+            }
+        ],
+        "startingPlayerId": 1,
+        "startingPlayerName": "Alex",
+        "winnerPlayerId": 1,
+        "winnerPlayerName": "Alex",
+        "winnerDeckId": 35,
+        "winnerDeckName": "Kinnan",
+        "turns": 6
+    },
+    {
+        "id": 52,
+        "gameSessionId": 13,
+        "gameSessionDate": "2023-04-15T22:00:00.000+00:00",
+        "gamePlayers": [
+            {
+                "playerId": 2,
+                "deckId": 8,
+                "playerName": "Fer",
+                "deckName": "Meren"
+            },
+            {
+                "playerId": 4,
+                "deckId": 38,
+                "playerName": "Betto",
+                "deckName": "Sidar Jabari"
+            },
+            {
+                "playerId": 1,
+                "deckId": 12,
+                "playerName": "Alex",
+                "deckName": "Kumena"
+            },
+            {
+                "playerId": 3,
+                "deckId": 34,
+                "playerName": "Andreu",
+                "deckName": "Lazav"
+            }
+        ],
+        "startingPlayerId": 2,
+        "startingPlayerName": "Fer",
+        "winnerPlayerId": 2,
+        "winnerPlayerName": "Fer",
+        "winnerDeckId": 8,
+        "winnerDeckName": "Meren",
+        "turns": 9
+    },
+    {
+        "id": 53,
+        "gameSessionId": 13,
+        "gameSessionDate": "2023-04-15T22:00:00.000+00:00",
+        "gamePlayers": [
+            {
+                "playerId": 2,
+                "deckId": 8,
+                "playerName": "Fer",
+                "deckName": "Meren"
+            },
+            {
+                "playerId": 4,
+                "deckId": 33,
+                "playerName": "Betto",
+                "deckName": "Jodah"
+            },
+            {
+                "playerId": 1,
+                "deckId": 12,
+                "playerName": "Alex",
+                "deckName": "Kumena"
+            },
+            {
+                "playerId": 3,
+                "deckId": 34,
+                "playerName": "Andreu",
+                "deckName": "Lazav"
+            }
+        ],
+        "startingPlayerId": 4,
+        "startingPlayerName": "Betto",
+        "winnerPlayerId": 4,
+        "winnerPlayerName": "Betto",
+        "winnerDeckId": 33,
+        "winnerDeckName": "Jodah",
+        "turns": 10
+    },
+    {
+        "id": 54,
+        "gameSessionId": 13,
+        "gameSessionDate": "2023-04-15T22:00:00.000+00:00",
+        "gamePlayers": [
+            {
+                "playerId": 4,
+                "deckId": 13,
+                "playerName": "Betto",
+                "deckName": "Atraxa"
+            },
+            {
+                "playerId": 1,
+                "deckId": 5,
+                "playerName": "Alex",
+                "deckName": "Veyran"
+            },
+            {
+                "playerId": 3,
+                "deckId": 34,
+                "playerName": "Andreu",
+                "deckName": "Lazav"
+            },
+            {
+                "playerId": 2,
+                "deckId": 17,
+                "playerName": "Fer",
+                "deckName": "Lathril"
+            }
+        ],
+        "startingPlayerId": 4,
+        "startingPlayerName": "Betto",
+        "winnerPlayerId": 4,
+        "winnerPlayerName": "Betto",
+        "winnerDeckId": 13,
+        "winnerDeckName": "Atraxa",
+        "turns": 8
+    },
+    {
+        "id": 55,
+        "gameSessionId": 13,
+        "gameSessionDate": "2023-04-15T22:00:00.000+00:00",
+        "gamePlayers": [
+            {
+                "playerId": 3,
+                "deckId": 34,
+                "playerName": "Andreu",
+                "deckName": "Lazav"
+            },
+            {
+                "playerId": 2,
+                "deckId": 17,
+                "playerName": "Fer",
+                "deckName": "Lathril"
+            },
+            {
+                "playerId": 4,
+                "deckId": 3,
+                "playerName": "Betto",
+                "deckName": "Markov"
+            },
+            {
+                "playerId": 1,
+                "deckId": 5,
+                "playerName": "Alex",
+                "deckName": "Veyran"
+            }
+        ],
+        "startingPlayerId": 3,
+        "startingPlayerName": "Andreu",
+        "winnerPlayerId": 1,
+        "winnerPlayerName": "Alex",
+        "winnerDeckId": 5,
+        "winnerDeckName": "Veyran",
+        "turns": 7
+    },
+    {
+        "id": 56,
+        "gameSessionId": 13,
+        "gameSessionDate": "2023-04-15T22:00:00.000+00:00",
+        "gamePlayers": [
+            {
+                "playerId": 2,
+                "deckId": 3,
+                "playerName": "Fer",
+                "deckName": "Markov"
+            },
+            {
+                "playerId": 4,
+                "deckId": 33,
+                "playerName": "Betto",
+                "deckName": "Jodah"
+            },
+            {
+                "playerId": 1,
+                "deckId": 35,
+                "playerName": "Alex",
+                "deckName": "Kinnan"
+            },
+            {
+                "playerId": 3,
+                "deckId": 34,
+                "playerName": "Andreu",
+                "deckName": "Lazav"
+            }
+        ],
+        "startingPlayerId": 2,
+        "startingPlayerName": "Fer",
+        "winnerPlayerId": 1,
+        "winnerPlayerName": "Alex",
+        "winnerDeckId": 35,
+        "winnerDeckName": "Kinnan",
+        "turns": 12
     }
 ]
