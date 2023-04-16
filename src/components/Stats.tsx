@@ -7,6 +7,7 @@ import GamesChartDecksUsage from './charts/GamesChartDecksUsage'
 import GamesChartDecksUsageOverTime from './charts/GamesChartDecksUsageOverTime'
 import GamesChartColorPresence from './charts/GamesChartColorPresence'
 import GamesChartColorAffinity from './charts/GamesChartColorAffinity'
+import GamesChartDeckWinratioOverTime from './charts/GamesChartDeckWinratioOverTime'
 
 export default function Stats (){
     const [chartSelected, setChartSelected] = useState("WinratioOverTime")
@@ -50,8 +51,19 @@ export default function Stats (){
                                 .filter(g => g.gamePlayers.map(gg => gg.playerName).every(pn => multiValuePlayers.includes(pn)))
                                 .filter(g => g.gamePlayers.map(gg => gg.deckName).every(pn => multiValueDecks.includes(pn)))
                                 .filter(g => new Date(g.gameSessionDate) > dateRange[0]! && new Date(g.gameSessionDate) < dateRange[1]!)
-                        }/>
-                            </Card>)
+                        }/></Card>)
+            case 'DeckWinratioOverTime':{
+                return (<Card>
+                    {
+                        <GamesChartDeckWinratioOverTime data={
+                            gamesMock
+                                .filter((g : any)=> g.gamePlayers.some((gp : any) => gp.playerName === playerSelected))
+                                .filter(g => g.gamePlayers.map(gg => gg.deckName).every(pn => multiValueDecks.includes(pn)))
+                                .filter(g => new Date(g.gameSessionDate) > dateRange[0]! && new Date(g.gameSessionDate) < dateRange[1]!)
+                            } player={playersMock.filter(p => p.name === playerSelected)[0].id} />
+                    }
+                </Card>)
+            }
             default:
                 return
 
@@ -61,11 +73,12 @@ export default function Stats (){
         switch(chartSelected){
             case 'WinratioOverTime':
             case 'ColorPresence':
-                return getFiltersA();
+                return getFiltersMultiplayer();
             case 'ColorAffinity':
             case 'DecksUsage':
             case 'DecksUsageOverTime':
-                return getFiltersB();
+            case 'DeckWinratioOverTime':
+                return getFiltersSingleplayer();
             default:
                 return
 
@@ -103,7 +116,7 @@ export default function Stats (){
                 }
             </div>)
     }
-    const getFiltersA = () =>{
+    const getFiltersMultiplayer = () =>{
         return (
             <Card >
                     <Title>Filtros</Title>
@@ -125,7 +138,7 @@ export default function Stats (){
                 </Card>
         )
     }
-    const getFiltersB = () =>{
+    const getFiltersSingleplayer = () =>{
         return (
             <Card >
                     <Title>Filtros</Title>
@@ -147,6 +160,23 @@ export default function Stats (){
                 </Card>
         )
     }
+    const getFiltersNoplayer = () =>{
+        return (
+            <Card >
+                    <Title>Filtros</Title>
+                    <Text>Dates</Text>
+                    <DateRangePicker className="max-w-sm mx-auto" enableDropdown={false} value={dateRange} onValueChange={setDateRange}/>
+                    
+                    <Title>Decks</Title>
+                    <MultiSelectBox value={multiValueDecks} onValueChange={setMultiValueDecks}>
+                        { decksMock.map(d => <MultiSelectBoxItem key={d.name} value={d.name} text={d.name} />) }
+                    </MultiSelectBox>
+                    
+                    <Button style={{"marginTop":"8px"}}>Reset</Button>
+                    <div className="h-28" />
+                </Card>
+        )
+    }
     return (
         <>
             <Grid numColsLg={3} className="mt-6 gap-6">
@@ -157,8 +187,10 @@ export default function Stats (){
                             <ListItem><button onClick={()=>{setChartSelected("WinratioOverTime")}}>Winratio over time</button></ListItem>
                             <ListItem><button onClick={()=>{setChartSelected("DecksUsage")}}>Decks usage</button></ListItem>
                             <ListItem><button onClick={()=>{setChartSelected("DecksUsageOverTime")}}>Decks usage over time</button></ListItem>
+                            <ListItem><button onClick={()=>{setChartSelected("DeckWinratioOverTime")}}>Decks winratio over time</button></ListItem>
                             <ListItem><button onClick={()=>{setChartSelected("ColorPresence")}}>Color presence</button></ListItem>
                             <ListItem><button onClick={()=>{setChartSelected("ColorAffinity")}}>Color affinity</button></ListItem>
+                            
                         </List>
                         <div className="h-28" />
                     </Card>
