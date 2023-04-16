@@ -2267,12 +2267,6 @@ export const gamesMock = [
         "gameSessionDate": "2023-04-15T22:00:00.000+00:00",
         "gamePlayers": [
             {
-                "playerId": 2,
-                "deckId": 8,
-                "playerName": "Fer",
-                "deckName": "Meren"
-            },
-            {
                 "playerId": 4,
                 "deckId": 33,
                 "playerName": "Betto",
@@ -2280,15 +2274,21 @@ export const gamesMock = [
             },
             {
                 "playerId": 1,
-                "deckId": 12,
+                "deckId": 36,
                 "playerName": "Alex",
-                "deckName": "Kumena"
+                "deckName": "Light-Paws"
             },
             {
                 "playerId": 3,
                 "deckId": 34,
                 "playerName": "Andreu",
                 "deckName": "Lazav"
+            },
+            {
+                "playerId": 2,
+                "deckId": 17,
+                "playerName": "Fer",
+                "deckName": "Lathril"
             }
         ],
         "startingPlayerId": 4,
