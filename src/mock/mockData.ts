@@ -380,7 +380,25 @@ export const decksMock = [
             "Black",
             "Blue"
         ]
+    },
+    {
+        "id": "39",
+        "ownerId": "4",
+        "name": "Thrun",
+        "colors": [
+            "Green"
+        ]
+    },
+    {
+        "id": "40",
+        "ownerId": "1",
+        "name": "Ghyrson Starn",
+        "colors": [
+            "Red",
+            "Blue"
+        ]
     }
+
 ]
 export const gamesMock = [
     {
