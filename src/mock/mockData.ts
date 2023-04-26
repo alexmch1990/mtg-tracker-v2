@@ -2412,5 +2412,118 @@ export const gamesMock = [
         "winnerDeckId": 35,
         "winnerDeckName": "Kinnan",
         "turns": 12
+    },
+    {
+        "id": 57,
+        "gameSessionId": 14,
+        "gameSessionDate": "2023-04-26T22:00:00.000+00:00",
+        "gamePlayers": [
+            {
+                "playerId": 4,
+                "deckId": 39,
+                "playerName": "Betto",
+                "deckName": "Thrun"
+            },
+            {
+                "playerId": 3,
+                "deckId": 2,
+                "playerName": "Andreu",
+                "deckName": "Karlov"
+            },
+            {
+                "playerId": 1,
+                "deckId": 40,
+                "playerName": "Alex",
+                "deckName": "Ghyrson Starn"
+            },
+            {
+                "playerId": 2,
+                "deckId": 8,
+                "playerName": "Fer",
+                "deckName": "Meren"
+            }
+        ],
+        "startingPlayerId": 4,
+        "startingPlayerName": "Betto",
+        "winnerPlayerId": 1,
+        "winnerPlayerName": "Alex",
+        "winnerDeckId": 40,
+        "winnerDeckName": "Ghyrson Starn",
+        "turns": 8
+    },
+    {
+        "id": 58,
+        "gameSessionId": 14,
+        "gameSessionDate": "2023-04-26T22:00:00.000+00:00",
+        "gamePlayers": [
+            {
+                "playerId": 4,
+                "deckId": 33,
+                "playerName": "Betto",
+                "deckName": "Jodah"
+            },
+            {
+                "playerId": 3,
+                "deckId": 2,
+                "playerName": "Andreu",
+                "deckName": "Karlov"
+            },
+            {
+                "playerId": 1,
+                "deckId": 36,
+                "playerName": "Alex",
+                "deckName": "Light-Paws"
+            },
+            {
+                "playerId": 2,
+                "deckId": 17,
+                "playerName": "Fer",
+                "deckName": "Lathril"
+            }
+        ],
+        "startingPlayerId": 4,
+        "startingPlayerName": "Betto",
+        "winnerPlayerId": 3,
+        "winnerPlayerName": "Andreu",
+        "winnerDeckId": 2,
+        "winnerDeckName": "Karlov",
+        "turns": 6
+    },
+    {
+        "id": 59,
+        "gameSessionId": 14,
+        "gameSessionDate": "2023-04-26T22:00:00.000+00:00",
+        "gamePlayers": [
+            {
+                "playerId": 2,
+                "deckId": 3,
+                "playerName": "Fer",
+                "deckName": "Markov"
+            },
+            {
+                "playerId": 4,
+                "deckId": 33,
+                "playerName": "Betto",
+                "deckName": "Jodah"
+            },
+            {
+                "playerId": 3,
+                "deckId": 2,
+                "playerName": "Andreu",
+                "deckName": "Karlov"
+            },
+            {
+                "playerId": 1,
+                "deckId": 40,
+                "playerName": "Alex",
+                "deckName": "Ghyrson Starn"
+            }
+        ],
+        "startingPlayerId": 2,
+        "startingPlayerName": "Fer",
+        "winnerPlayerId": 1,
+        "winnerPlayerName": "Alex",
+        "winnerDeckId": 40,
+        "winnerDeckName": "Ghyrson Starn",
     }
 ]
