@@ -299,6 +299,35 @@ export const decksMock = [
     },
     {
         "id": "30",
+        "ownerId": "1",
+        "name": "Inalla",
+        "colors": [
+            "Red",
+            "Black",
+            "Blue"
+        ]
+    },
+    {
+        "id": "31",
+        "ownerId": "1",
+        "name": "Kasla",
+        "colors": [
+            "White",
+            "Red",
+            "Blue"
+        ]
+    },
+    {
+        "id": "32",
+        "ownerId": "4",
+        "name": "Wilhelt",
+        "colors": [
+            "Black",
+            "Blue"
+        ]
+    },
+    {
+        "id": "33",
         "ownerId": "4",
         "name": "Henzie",
         "colors": [
@@ -308,7 +337,7 @@ export const decksMock = [
         ]
     },
     {
-        "id": "31",
+        "id": "34",
         "ownerId": "4",
         "name": "Burakos",
         "colors": [
@@ -317,7 +346,7 @@ export const decksMock = [
         ]
     },
     {
-        "id": "32",
+        "id": "35",
         "ownerId": "4",
         "name": "Konrad",
         "colors": [
@@ -325,7 +354,7 @@ export const decksMock = [
         ]
     },
     {
-        "id": "33",
+        "id": "36",
         "ownerId": "4",
         "name": "Jodah",
         "colors": [
@@ -337,7 +366,7 @@ export const decksMock = [
         ]
     },
     {
-        "id": "34",
+        "id": "37",
         "ownerId": "3",
         "name": "Lazav",
         "colors": [
@@ -346,7 +375,7 @@ export const decksMock = [
         ]
     },
     {
-        "id": "35",
+        "id": "38",
         "ownerId": "1",
         "name": "Kinnan",
         "colors": [
@@ -355,7 +384,7 @@ export const decksMock = [
         ]
     },
     {
-        "id": "36",
+        "id": "39",
         "ownerId": "1",
         "name": "Light-Paws",
         "colors": [
@@ -363,7 +392,7 @@ export const decksMock = [
         ]
     },
     {
-        "id": "37",
+        "id": "40",
         "ownerId": "4",
         "name": "Scarab-god",
         "colors": [
@@ -372,7 +401,7 @@ export const decksMock = [
         ]
     },
     {
-        "id": "38",
+        "id": "41",
         "ownerId": "4",
         "name": "Sidar Jabari",
         "colors": [
@@ -382,7 +411,7 @@ export const decksMock = [
         ]
     },
     {
-        "id": "39",
+        "id": "42",
         "ownerId": "4",
         "name": "Thrun",
         "colors": [
@@ -390,7 +419,7 @@ export const decksMock = [
         ]
     },
     {
-        "id": "40",
+        "id": "43",
         "ownerId": "1",
         "name": "Ghyrson Starn",
         "colors": [
@@ -398,7 +427,6 @@ export const decksMock = [
             "Blue"
         ]
     }
-
 ]
 export const gamesMock = [
     {
@@ -2038,13 +2066,13 @@ export const gamesMock = [
         "gamePlayers": [
             {
                 "playerId": 4,
-                "deckId": 30,
+                "deckId": 33,
                 "playerName": "Betto",
                 "deckName": "Henzie"
             },
             {
                 "playerId": 3,
-                "deckId": 31,
+                "deckId": 34,
                 "playerName": "Andreu",
                 "deckName": "Burakos"
             },
@@ -2070,13 +2098,13 @@ export const gamesMock = [
         "gamePlayers": [
             {
                 "playerId": 4,
-                "deckId": 30,
+                "deckId": 33,
                 "playerName": "Betto",
                 "deckName": "Henzie"
             },
             {
                 "playerId": 3,
-                "deckId": 31,
+                "deckId": 34,
                 "playerName": "Andreu",
                 "deckName": "Burakos"
             },
@@ -2102,7 +2130,7 @@ export const gamesMock = [
         "gamePlayers": [
             {
                 "playerId": 4,
-                "deckId": 32,
+                "deckId": 35,
                 "playerName": "Betto",
                 "deckName": "Konrad"
             },
@@ -2123,7 +2151,7 @@ export const gamesMock = [
         "startingPlayerName": "Betto",
         "winnerPlayerId": 4,
         "winnerPlayerName": "Betto",
-        "winnerDeckId": 32,
+        "winnerDeckId": 35,
         "winnerDeckName": "Konrad",
         "turns": 8
     },
@@ -2134,7 +2162,7 @@ export const gamesMock = [
         "gamePlayers": [
             {
                 "playerId": 4,
-                "deckId": 33,
+                "deckId": 36,
                 "playerName": "Betto",
                 "deckName": "Jodah"
             },
@@ -2172,7 +2200,7 @@ export const gamesMock = [
         "gamePlayers": [
             {
                 "playerId": 4,
-                "deckId": 33,
+                "deckId": 36,
                 "playerName": "Betto",
                 "deckName": "Jodah"
             },
@@ -2199,7 +2227,7 @@ export const gamesMock = [
         "startingPlayerName": "Betto",
         "winnerPlayerId": 4,
         "winnerPlayerName": "Betto",
-        "winnerDeckId": 33,
+        "winnerDeckId": 36,
         "winnerDeckName": "Jodah",
         "turns": 8
     },
@@ -2210,13 +2238,13 @@ export const gamesMock = [
         "gamePlayers": [
             {
                 "playerId": 1,
-                "deckId": 35,
+                "deckId": 38,
                 "playerName": "Alex",
                 "deckName": "Kinnan"
             },
             {
                 "playerId": 3,
-                "deckId": 34,
+                "deckId": 37,
                 "playerName": "Andreu",
                 "deckName": "Lazav"
             },
@@ -2228,7 +2256,7 @@ export const gamesMock = [
             },
             {
                 "playerId": 4,
-                "deckId": 37,
+                "deckId": 40,
                 "playerName": "Betto",
                 "deckName": "Scarab-god"
             }
@@ -2237,7 +2265,7 @@ export const gamesMock = [
         "startingPlayerName": "Alex",
         "winnerPlayerId": 1,
         "winnerPlayerName": "Alex",
-        "winnerDeckId": 35,
+        "winnerDeckId": 38,
         "winnerDeckName": "Kinnan",
         "turns": 6
     },
@@ -2254,7 +2282,7 @@ export const gamesMock = [
             },
             {
                 "playerId": 4,
-                "deckId": 38,
+                "deckId": 41,
                 "playerName": "Betto",
                 "deckName": "Sidar Jabari"
             },
@@ -2266,7 +2294,7 @@ export const gamesMock = [
             },
             {
                 "playerId": 3,
-                "deckId": 34,
+                "deckId": 37,
                 "playerName": "Andreu",
                 "deckName": "Lazav"
             }
@@ -2286,19 +2314,19 @@ export const gamesMock = [
         "gamePlayers": [
             {
                 "playerId": 4,
-                "deckId": 33,
+                "deckId": 36,
                 "playerName": "Betto",
                 "deckName": "Jodah"
             },
             {
                 "playerId": 1,
-                "deckId": 36,
+                "deckId": 39,
                 "playerName": "Alex",
                 "deckName": "Light-Paws"
             },
             {
                 "playerId": 3,
-                "deckId": 34,
+                "deckId": 37,
                 "playerName": "Andreu",
                 "deckName": "Lazav"
             },
@@ -2313,7 +2341,7 @@ export const gamesMock = [
         "startingPlayerName": "Betto",
         "winnerPlayerId": 4,
         "winnerPlayerName": "Betto",
-        "winnerDeckId": 33,
+        "winnerDeckId": 36,
         "winnerDeckName": "Jodah",
         "turns": 10
     },
@@ -2336,7 +2364,7 @@ export const gamesMock = [
             },
             {
                 "playerId": 3,
-                "deckId": 34,
+                "deckId": 37,
                 "playerName": "Andreu",
                 "deckName": "Lazav"
             },
@@ -2362,7 +2390,7 @@ export const gamesMock = [
         "gamePlayers": [
             {
                 "playerId": 3,
-                "deckId": 34,
+                "deckId": 37,
                 "playerName": "Andreu",
                 "deckName": "Lazav"
             },
@@ -2406,19 +2434,19 @@ export const gamesMock = [
             },
             {
                 "playerId": 4,
-                "deckId": 33,
+                "deckId": 36,
                 "playerName": "Betto",
                 "deckName": "Jodah"
             },
             {
                 "playerId": 1,
-                "deckId": 35,
+                "deckId": 38,
                 "playerName": "Alex",
                 "deckName": "Kinnan"
             },
             {
                 "playerId": 3,
-                "deckId": 34,
+                "deckId": 37,
                 "playerName": "Andreu",
                 "deckName": "Lazav"
             }
@@ -2427,7 +2455,7 @@ export const gamesMock = [
         "startingPlayerName": "Fer",
         "winnerPlayerId": 1,
         "winnerPlayerName": "Alex",
-        "winnerDeckId": 35,
+        "winnerDeckId": 38,
         "winnerDeckName": "Kinnan",
         "turns": 12
     },
@@ -2438,7 +2466,7 @@ export const gamesMock = [
         "gamePlayers": [
             {
                 "playerId": 4,
-                "deckId": 39,
+                "deckId": 42,
                 "playerName": "Betto",
                 "deckName": "Thrun"
             },
@@ -2450,7 +2478,7 @@ export const gamesMock = [
             },
             {
                 "playerId": 1,
-                "deckId": 40,
+                "deckId": 43,
                 "playerName": "Alex",
                 "deckName": "Ghyrson Starn"
             },
@@ -2465,7 +2493,7 @@ export const gamesMock = [
         "startingPlayerName": "Betto",
         "winnerPlayerId": 1,
         "winnerPlayerName": "Alex",
-        "winnerDeckId": 40,
+        "winnerDeckId": 43,
         "winnerDeckName": "Ghyrson Starn",
         "turns": 8
     },
@@ -2476,7 +2504,7 @@ export const gamesMock = [
         "gamePlayers": [
             {
                 "playerId": 4,
-                "deckId": 33,
+                "deckId": 36,
                 "playerName": "Betto",
                 "deckName": "Jodah"
             },
@@ -2488,7 +2516,7 @@ export const gamesMock = [
             },
             {
                 "playerId": 1,
-                "deckId": 36,
+                "deckId": 39,
                 "playerName": "Alex",
                 "deckName": "Light-Paws"
             },
@@ -2520,7 +2548,7 @@ export const gamesMock = [
             },
             {
                 "playerId": 4,
-                "deckId": 33,
+                "deckId": 36,
                 "playerName": "Betto",
                 "deckName": "Jodah"
             },
@@ -2532,7 +2560,7 @@ export const gamesMock = [
             },
             {
                 "playerId": 1,
-                "deckId": 40,
+                "deckId": 43,
                 "playerName": "Alex",
                 "deckName": "Ghyrson Starn"
             }
@@ -2541,7 +2569,230 @@ export const gamesMock = [
         "startingPlayerName": "Fer",
         "winnerPlayerId": 1,
         "winnerPlayerName": "Alex",
-        "winnerDeckId": 40,
+        "winnerDeckId": 43,
         "winnerDeckName": "Ghyrson Starn",
+        "turns": 10
+    },
+    {
+        "id": 60,
+        "gameSessionId": 15,
+        "gameSessionDate": "2023-05-02T22:00:00.000+00:00",
+        "gamePlayers": [
+            {
+                "playerId": 1,
+                "deckId": 31,
+                "playerName": "Alex",
+                "deckName": "Kasla"
+            },
+            {
+                "playerId": 4,
+                "deckId": 32,
+                "playerName": "Betto",
+                "deckName": "Wilhelt"
+            },
+            {
+                "playerId": 3,
+                "deckId": 37,
+                "playerName": "Andreu",
+                "deckName": "Lazav"
+            }
+        ],
+        "startingPlayerId": 1,
+        "startingPlayerName": "Alex",
+        "winnerPlayerId": 1,
+        "winnerPlayerName": "Alex",
+        "winnerDeckId": 31,
+        "winnerDeckName": "Kasla",
+        "turns": 8
+    },
+    {
+        "id": 61,
+        "gameSessionId": 15,
+        "gameSessionDate": "2023-05-02T22:00:00.000+00:00",
+        "gamePlayers": [
+            {
+                "playerId": 4,
+                "deckId": 13,
+                "playerName": "Betto",
+                "deckName": "Atraxa"
+            },
+            {
+                "playerId": 3,
+                "deckId": 37,
+                "playerName": "Andreu",
+                "deckName": "Lazav"
+            },
+            {
+                "playerId": 1,
+                "deckId": 30,
+                "playerName": "Alex",
+                "deckName": "Inalla"
+            },
+            {
+                "playerId": 2,
+                "deckId": 17,
+                "playerName": "Fer",
+                "deckName": "Lathril"
+            }
+        ],
+        "startingPlayerId": 4,
+        "startingPlayerName": "Betto",
+        "winnerPlayerId": 4,
+        "winnerPlayerName": "Betto",
+        "winnerDeckId": 13,
+        "winnerDeckName": "Atraxa",
+        "turns": 6
+    },
+    {
+        "id": 62,
+        "gameSessionId": 15,
+        "gameSessionDate": "2023-05-02T22:00:00.000+00:00",
+        "gamePlayers": [
+            {
+                "playerId": 4,
+                "deckId": 36,
+                "playerName": "Betto",
+                "deckName": "Jodah"
+            },
+            {
+                "playerId": 3,
+                "deckId": 6,
+                "playerName": "Andreu",
+                "deckName": "Teysa"
+            },
+            {
+                "playerId": 1,
+                "deckId": 30,
+                "playerName": "Alex",
+                "deckName": "Inalla"
+            },
+            {
+                "playerId": 2,
+                "deckId": 17,
+                "playerName": "Fer",
+                "deckName": "Lathril"
+            }
+        ],
+        "startingPlayerId": 4,
+        "startingPlayerName": "Betto",
+        "winnerPlayerId": 4,
+        "winnerPlayerName": "Betto",
+        "winnerDeckId": 36,
+        "winnerDeckName": "Jodah",
+        "turns": 9
+    },
+    {
+        "id": 63,
+        "gameSessionId": 15,
+        "gameSessionDate": "2023-05-02T22:00:00.000+00:00",
+        "gamePlayers": [
+            {
+                "playerId": 4,
+                "deckId": 37,
+                "playerName": "Betto",
+                "deckName": "Lazav"
+            },
+            {
+                "playerId": 3,
+                "deckId": 6,
+                "playerName": "Andreu",
+                "deckName": "Teysa"
+            },
+            {
+                "playerId": 1,
+                "deckId": 31,
+                "playerName": "Alex",
+                "deckName": "Kasla"
+            },
+            {
+                "playerId": 2,
+                "deckId": 3,
+                "playerName": "Fer",
+                "deckName": "Markov"
+            }
+        ],
+        "startingPlayerId": 4,
+        "startingPlayerName": "Betto",
+        "winnerPlayerId": 4,
+        "winnerPlayerName": "Betto",
+        "winnerDeckId": 37,
+        "winnerDeckName": "Lazav",
+        "turns": 7
+    },
+    {
+        "id": 64,
+        "gameSessionId": 15,
+        "gameSessionDate": "2023-05-02T22:00:00.000+00:00",
+        "gamePlayers": [
+            {
+                "playerId": 3,
+                "deckId": 37,
+                "playerName": "Andreu",
+                "deckName": "Lazav"
+            },
+            {
+                "playerId": 1,
+                "deckId": 31,
+                "playerName": "Alex",
+                "deckName": "Kasla"
+            },
+            {
+                "playerId": 2,
+                "deckId": 3,
+                "playerName": "Fer",
+                "deckName": "Markov"
+            },
+            {
+                "playerId": 4,
+                "deckId": 17,
+                "playerName": "Betto",
+                "deckName": "Lathril"
+            }
+        ],
+        "startingPlayerId": 3,
+        "startingPlayerName": "Andreu",
+        "winnerPlayerId": 4,
+        "winnerPlayerName": "Betto",
+        "winnerDeckId": 17,
+        "winnerDeckName": "Lathril",
+        "turns": 7
+    },
+    {
+        "id": 65,
+        "gameSessionId": 15,
+        "gameSessionDate": "2023-05-02T22:00:00.000+00:00",
+        "gamePlayers": [
+            {
+                "playerId": 4,
+                "deckId": 14,
+                "playerName": "Betto",
+                "deckName": "Sefris"
+            },
+            {
+                "playerId": 3,
+                "deckId": 16,
+                "playerName": "Andreu",
+                "deckName": "Urza"
+            },
+            {
+                "playerId": 1,
+                "deckId": 31,
+                "playerName": "Alex",
+                "deckName": "Kasla"
+            },
+            {
+                "playerId": 2,
+                "deckId": 3,
+                "playerName": "Fer",
+                "deckName": "Markov"
+            }
+        ],
+        "startingPlayerId": 4,
+        "startingPlayerName": "Betto",
+        "winnerPlayerId": 1,
+        "winnerPlayerName": "Alex",
+        "winnerDeckId": 31,
+        "winnerDeckName": "Kasla",
+        "turns": 9
     }
 ]
