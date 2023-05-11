@@ -2794,5 +2794,165 @@ export const gamesMock = [
         "winnerDeckId": 31,
         "winnerDeckName": "Kasla",
         "turns": 9
+    },
+    {
+        "id": 66,
+        "gameSessionId": 16,
+        "gameSessionDate": "2023-05-09T22:00:00.000+00:00",
+        "gamePlayers": [
+            {
+                "playerId": 3,
+                "deckId": 16,
+                "playerName": "Andreu",
+                "deckName": "Urza"
+            },
+            {
+                "playerId": 1,
+                "deckId": 31,
+                "playerName": "Alex",
+                "deckName": "Kasla"
+            },
+            {
+                "playerId": 4,
+                "deckId": 32,
+                "playerName": "Betto",
+                "deckName": "Wilhelt"
+            }
+        ],
+        "startingPlayerId": 3,
+        "startingPlayerName": "Andreu",
+        "winnerPlayerId": 4,
+        "winnerPlayerName": "Betto",
+        "winnerDeckId": 32,
+        "winnerDeckName": "Wilhelt",
+        "turns": 8
+    },
+    {
+        "id": 67,
+        "gameSessionId": 16,
+        "gameSessionDate": "2023-05-09T22:00:00.000+00:00",
+        "gamePlayers": [
+            {
+                "playerId": 4,
+                "deckId": 36,
+                "playerName": "Betto",
+                "deckName": "Jodah"
+            },
+            {
+                "playerId": 3,
+                "deckId": 16,
+                "playerName": "Andreu",
+                "deckName": "Urza"
+            },
+            {
+                "playerId": 1,
+                "deckId": 31,
+                "playerName": "Alex",
+                "deckName": "Kasla"
+            }
+        ],
+        "startingPlayerId": 1,
+        "startingPlayerName": "Alex",
+        "winnerPlayerId": 4,
+        "winnerPlayerName": "Betto",
+        "winnerDeckId": 36,
+        "winnerDeckName": "Jodah",
+        "turns": 9
+    },
+    {
+        "id": 68,
+        "gameSessionId": 16,
+        "gameSessionDate": "2023-05-09T22:00:00.000+00:00",
+        "gamePlayers": [
+            {
+                "playerId": 3,
+                "deckId": 16,
+                "playerName": "Andreu",
+                "deckName": "Urza"
+            },
+            {
+                "playerId": 1,
+                "deckId": 43,
+                "playerName": "Alex",
+                "deckName": "Ghyrson Starn"
+            },
+            {
+                "playerId": 4,
+                "deckId": 4,
+                "playerName": "Betto",
+                "deckName": "Archaon"
+            }
+        ],
+        "startingPlayerId": 3,
+        "startingPlayerName": "Andreu",
+        "winnerPlayerId": 3,
+        "winnerPlayerName": "Andreu",
+        "winnerDeckId": 16,
+        "winnerDeckName": "Urza",
+        "turns": 9
+    },
+    {
+        "id": 69,
+        "gameSessionId": 16,
+        "gameSessionDate": "2023-05-09T22:00:00.000+00:00",
+        "gamePlayers": [
+            {
+                "playerId": 1,
+                "deckId": 30,
+                "playerName": "Alex",
+                "deckName": "Inalla"
+            },
+            {
+                "playerId": 4,
+                "deckId": 14,
+                "playerName": "Betto",
+                "deckName": "Sefris"
+            },
+            {
+                "playerId": 3,
+                "deckId": 37,
+                "playerName": "Andreu",
+                "deckName": "Lazav"
+            }
+        ],
+        "startingPlayerId": 1,
+        "startingPlayerName": "Alex",
+        "winnerPlayerId": 1,
+        "winnerPlayerName": "Alex",
+        "winnerDeckId": 30,
+        "winnerDeckName": "Inalla",
+        "turns": 8
+    },
+    {
+        "id": 70,
+        "gameSessionId": 16,
+        "gameSessionDate": "2023-05-09T22:00:00.000+00:00",
+        "gamePlayers": [
+            {
+                "playerId": 1,
+                "deckId": 31,
+                "playerName": "Alex",
+                "deckName": "Kasla"
+            },
+            {
+                "playerId": 4,
+                "deckId": 36,
+                "playerName": "Betto",
+                "deckName": "Jodah"
+            },
+            {
+                "playerId": 3,
+                "deckId": 37,
+                "playerName": "Andreu",
+                "deckName": "Lazav"
+            }
+        ],
+        "startingPlayerId": 1,
+        "startingPlayerName": "Alex",
+        "winnerPlayerId": 1,
+        "winnerPlayerName": "Alex",
+        "winnerDeckId": 31,
+        "winnerDeckName": "Kasla",
+        "turns": 10
     }
 ]
